@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TourPackages;
+use App\Models\TourPackage;
 use Illuminate\Http\Request;
 
-class TourPackagesController extends Controller
+class TourPackageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class TourPackagesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(TourPackages $tourPackages)
+    public function show(TourPackage $tourPackage)
     {
         //
     }
@@ -42,7 +42,7 @@ class TourPackagesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(TourPackages $tourPackages)
+    public function edit(TourPackage $tourPackage)
     {
         //
     }
@@ -50,7 +50,7 @@ class TourPackagesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, TourPackages $tourPackages)
+    public function update(Request $request, TourPackage $tourPackage)
     {
         //
     }
@@ -58,7 +58,7 @@ class TourPackagesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(TourPackages $tourPackages)
+    public function destroy(TourPackage $tourPackage)
     {
         //
     }
