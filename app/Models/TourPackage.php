@@ -20,6 +20,6 @@ class TourPackage extends Model
     // Relación con Bookings: Un paquete turístico puede tener muchas reservas
     public function bookings()
     {
-        return $this->hasMany(Booking::class);
+        return $this->hasMany(Booking::class, 'tour_package_id');
     }
 }

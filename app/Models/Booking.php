@@ -11,7 +11,7 @@ class Booking extends Model
 
     protected $fillable = [
         'user_id',
-        'package_id',
+        'tour_package_id',
         'booking_date',
         'status',
     ];
@@ -25,7 +25,7 @@ class Booking extends Model
     // Relación con TourPackage: Una reserva pertenece a un paquete turístico
     public function tourPackage()
     {
-        return $this->belongsTo(TourPackage::class);
+        return $this->belongsTo(TourPackage::class, 'tour_package_id');
     }
 
 }
